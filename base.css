@@ -1,7 +1,7 @@
 /*Was just using this to get things sized and lined up*/
-* {
+/** {
   border: 1px dotted red;
-}
+}*/
 
 #profile-pic {
   display: inline;
@@ -12,5 +12,42 @@
 .header-info {
   display: inline;
   float: right;
-  margin-right: 33%;
+  margin-right: 37%;
+}
+
+.nav-bar {
+  background-color: black;
+  height: 3em;
+}
+
+.nav-buttons {
+  width: 10em;
+  margin-top: 1.25em;
+  margin-left: 1em;
+}
+
+#menu-icon {
+  display: none;
+}
+
+/*You will need to add more media query to make sure that it looks good on all screen sizes or at least most */
+@media screen and (max-width: 479px) {
+  .nav-buttons {
+    display: none;
+  }
+  .nav-bar {
+    height: 3.125em;
+    width: 3.125em;
+    position: absolute;
+    right: .5em;
+    bottom: 38.4em;
+  }
+  #menu-icon{
+    display: block;
+    height: 3.125em;
+    width: 3.125em;
+  }
+  .header-info {
+    margin-right: 5%;
+  }
 }
