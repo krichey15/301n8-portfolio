@@ -1,0 +1,16 @@
+/*Was just using this to get things sized and lined up*/
+* {
+  border: 1px dotted red;
+}
+
+#profile-pic {
+  display: inline;
+  height: 6.25em;
+  width: 6.25em;
+}
+
+.header-info {
+  display: inline;
+  float: right;
+  margin-right: 33%;
+}
